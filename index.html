@@ -52,7 +52,7 @@ nav{margin:8px 10px;border-radius:999px;border:1px solid transparent;background:
 <div class="wrap" id="app"></div><div id="toast"></div>
 <script>
 // ===== Supabase configuration: paste your project URL and ANON (public) key. Never paste the service_role key. =====
-const SUPABASE_URL='',SUPABASE_ANON_KEY='';
+const SUPABASE_URL='https://.supabase.co',SUPABASE_ANON_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im13aXJxcmhmdXJ5ZXdoZWdwbWxjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQ3MTAxMzQsImV4cCI6MjExMDI4NjEzNH0.h_ZhW8GnGfbFtoQPmhuW7rUrk16amtjbBgk7hDVAu6I';
 const SBON=!!(SUPABASE_URL&&SUPABASE_ANON_KEY&&window.supabase&&window.supabase.createClient),sb=SBON?window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY):null;
 // ===== Mock API layer (local fallback used when Supabase is not configured) =====
 const REQ={"Backend Developer":{Java:85,"Spring Boot":80,SQL:80,Docker:70,DSA:85,React:40},"Data Scientist":{Python:90,ML:85,SQL:80,DSA:70,Docker:50,React:20},"Full Stack Developer":{React:85,Java:70,SQL:75,Docker:60,DSA:75,"Spring Boot":65}};
